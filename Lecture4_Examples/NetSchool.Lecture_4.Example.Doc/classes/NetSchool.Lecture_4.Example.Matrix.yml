@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: NetSchool.Lecture_4.Example.Matrix
+  commentId: T:NetSchool.Lecture_4.Example.Matrix
+  id: Matrix
+  parent: NetSchool.Lecture_4.Example
+  children:
+  - NetSchool.Lecture_4.Example.Matrix.#ctor(System.Int32,System.Int32)
+  - NetSchool.Lecture_4.Example.Matrix.data
+  - NetSchool.Lecture_4.Example.Matrix.Fill(System.Int32)
+  - NetSchool.Lecture_4.Example.Matrix.Print
+  langs:
+  - csharp
+  - vb
+  name: Matrix
+  nameWithType: Matrix
+  fullName: NetSchool.Lecture_4.Example.Matrix
+  type: Class
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: Matrix
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 7
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  summary: "\nFilling array by circles\n"
+  example: []
+  syntax:
+    content: public class Matrix
+    content.vb: Public Class Matrix
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: NetSchool.Lecture_4.Example.Matrix.data
+  commentId: P:NetSchool.Lecture_4.Example.Matrix.data
+  id: data
+  parent: NetSchool.Lecture_4.Example.Matrix
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: Matrix.data
+  fullName: NetSchool.Lecture_4.Example.Matrix.data
+  type: Property
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: data
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 23
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  syntax:
+    content: public int[, ] data { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[,]
+    content.vb: Public Property data As Integer(,)
+  overload: NetSchool.Lecture_4.Example.Matrix.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: NetSchool.Lecture_4.Example.Matrix.#ctor(System.Int32,System.Int32)
+  commentId: M:NetSchool.Lecture_4.Example.Matrix.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: NetSchool.Lecture_4.Example.Matrix
+  langs:
+  - csharp
+  - vb
+  name: Matrix(Int32, Int32)
+  nameWithType: Matrix.Matrix(Int32, Int32)
+  fullName: NetSchool.Lecture_4.Example.Matrix.Matrix(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: .ctor
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 30
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  summary: "\nConstructor for matrix\n"
+  example: []
+  syntax:
+    content: public Matrix(int rowCount, int colCount)
+    parameters:
+    - id: rowCount
+      type: System.Int32
+      description: Count of rows
+    - id: colCount
+      type: System.Int32
+      description: Count of columns
+    content.vb: Public Sub New(rowCount As Integer, colCount As Integer)
+  overload: NetSchool.Lecture_4.Example.Matrix.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NetSchool.Lecture_4.Example.Matrix.Fill(System.Int32)
+  commentId: M:NetSchool.Lecture_4.Example.Matrix.Fill(System.Int32)
+  id: Fill(System.Int32)
+  parent: NetSchool.Lecture_4.Example.Matrix
+  langs:
+  - csharp
+  - vb
+  name: Fill(Int32)
+  nameWithType: Matrix.Fill(Int32)
+  fullName: NetSchool.Lecture_4.Example.Matrix.Fill(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: Fill
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 44
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  summary: "\nFill array\n"
+  example: []
+  syntax:
+    content: public void Fill(int startFrom = 0)
+    parameters:
+    - id: startFrom
+      type: System.Int32
+    content.vb: Public Sub Fill(startFrom As Integer = 0)
+  overload: NetSchool.Lecture_4.Example.Matrix.Fill*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: NetSchool.Lecture_4.Example.Matrix.Print
+  commentId: M:NetSchool.Lecture_4.Example.Matrix.Print
+  id: Print
+  parent: NetSchool.Lecture_4.Example.Matrix
+  langs:
+  - csharp
+  - vb
+  name: Print()
+  nameWithType: Matrix.Print()
+  fullName: NetSchool.Lecture_4.Example.Matrix.Print()
+  type: Method
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: Print
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 114
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  summary: "\nOutput array\n"
+  example: []
+  syntax:
+    content: public void Print()
+    content.vb: Public Sub Print
+  overload: NetSchool.Lecture_4.Example.Matrix.Print*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: NetSchool.Lecture_4.Example
+  commentId: N:NetSchool.Lecture_4.Example
+  name: NetSchool.Lecture_4.Example
+  nameWithType: NetSchool.Lecture_4.Example
+  fullName: NetSchool.Lecture_4.Example
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NetSchool.Lecture_4.Example.Matrix.data*
+  commentId: Overload:NetSchool.Lecture_4.Example.Matrix.data
+  name: data
+  nameWithType: Matrix.data
+  fullName: NetSchool.Lecture_4.Example.Matrix.data
+- uid: System.Int32[,]
+  isExternal: true
+  name: Int32[,]
+  nameWithType: Int32[,]
+  fullName: System.Int32[,]
+  nameWithType.vb: Int32(,)
+  fullName.vb: System.Int32(,)
+  name.vb: Int32(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: NetSchool.Lecture_4.Example.Matrix.#ctor*
+  commentId: Overload:NetSchool.Lecture_4.Example.Matrix.#ctor
+  name: Matrix
+  nameWithType: Matrix.Matrix
+  fullName: NetSchool.Lecture_4.Example.Matrix.Matrix
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: NetSchool.Lecture_4.Example.Matrix.Fill*
+  commentId: Overload:NetSchool.Lecture_4.Example.Matrix.Fill
+  name: Fill
+  nameWithType: Matrix.Fill
+  fullName: NetSchool.Lecture_4.Example.Matrix.Fill
+- uid: NetSchool.Lecture_4.Example.Matrix.Print*
+  commentId: Overload:NetSchool.Lecture_4.Example.Matrix.Print
+  name: Print
+  nameWithType: Matrix.Print
+  fullName: NetSchool.Lecture_4.Example.Matrix.Print

@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector
+  commentId: T:NetSchool.Lecture_4.Example.Matrix.Vector
+  id: Matrix.Vector
+  parent: NetSchool.Lecture_4.Example
+  children:
+  - NetSchool.Lecture_4.Example.Matrix.Vector.toDown
+  - NetSchool.Lecture_4.Example.Matrix.Vector.toLeft
+  - NetSchool.Lecture_4.Example.Matrix.Vector.toRight
+  - NetSchool.Lecture_4.Example.Matrix.Vector.toUp
+  langs:
+  - csharp
+  - vb
+  name: Matrix.Vector
+  nameWithType: Matrix.Vector
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector
+  type: Enum
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: Vector
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 12
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  summary: "\nVector of filling\n"
+  example: []
+  syntax:
+    content: public enum Vector
+    content.vb: Public Enum Vector
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector.toRight
+  commentId: F:NetSchool.Lecture_4.Example.Matrix.Vector.toRight
+  id: toRight
+  parent: NetSchool.Lecture_4.Example.Matrix.Vector
+  langs:
+  - csharp
+  - vb
+  name: toRight
+  nameWithType: Matrix.Vector.toRight
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector.toRight
+  type: Field
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: toRight
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 14
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  syntax:
+    content: toRight = 0
+    return:
+      type: NetSchool.Lecture_4.Example.Matrix.Vector
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector.toDown
+  commentId: F:NetSchool.Lecture_4.Example.Matrix.Vector.toDown
+  id: toDown
+  parent: NetSchool.Lecture_4.Example.Matrix.Vector
+  langs:
+  - csharp
+  - vb
+  name: toDown
+  nameWithType: Matrix.Vector.toDown
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector.toDown
+  type: Field
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: toDown
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 15
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  syntax:
+    content: toDown = 1
+    return:
+      type: NetSchool.Lecture_4.Example.Matrix.Vector
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector.toLeft
+  commentId: F:NetSchool.Lecture_4.Example.Matrix.Vector.toLeft
+  id: toLeft
+  parent: NetSchool.Lecture_4.Example.Matrix.Vector
+  langs:
+  - csharp
+  - vb
+  name: toLeft
+  nameWithType: Matrix.Vector.toLeft
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector.toLeft
+  type: Field
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: toLeft
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 16
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  syntax:
+    content: toLeft = 2
+    return:
+      type: NetSchool.Lecture_4.Example.Matrix.Vector
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector.toUp
+  commentId: F:NetSchool.Lecture_4.Example.Matrix.Vector.toUp
+  id: toUp
+  parent: NetSchool.Lecture_4.Example.Matrix.Vector
+  langs:
+  - csharp
+  - vb
+  name: toUp
+  nameWithType: Matrix.Vector.toUp
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector.toUp
+  type: Field
+  source:
+    remote:
+      path: D:/00_DSR/DSR Schools/DotNet Scool/Lectures/Lecture 4/Example/NetSchool.Lecture_4.Example/Matrix.cs
+    id: toUp
+    path: ../NetSchool.Lecture_4.Example/Matrix.cs
+    startLine: 17
+  assemblies:
+  - NetSchool.Lecture_4.Example
+  namespace: NetSchool.Lecture_4.Example
+  syntax:
+    content: toUp = 3
+    return:
+      type: NetSchool.Lecture_4.Example.Matrix.Vector
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: NetSchool.Lecture_4.Example
+  commentId: N:NetSchool.Lecture_4.Example
+  name: NetSchool.Lecture_4.Example
+  nameWithType: NetSchool.Lecture_4.Example
+  fullName: NetSchool.Lecture_4.Example
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector
+  commentId: T:NetSchool.Lecture_4.Example.Matrix.Vector
+  parent: NetSchool.Lecture_4.Example
+  name: Matrix.Vector
+  nameWithType: Matrix.Vector
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector

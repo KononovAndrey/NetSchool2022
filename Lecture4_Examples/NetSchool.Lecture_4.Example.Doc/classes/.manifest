@@ -1,0 +1,13 @@
+{
+  "NetSchool.Lecture_4.Example": "NetSchool.Lecture_4.Example.yml",
+  "NetSchool.Lecture_4.Example.Matrix": "NetSchool.Lecture_4.Example.Matrix.yml",
+  "NetSchool.Lecture_4.Example.Matrix.#ctor(System.Int32,System.Int32)": "NetSchool.Lecture_4.Example.Matrix.yml",
+  "NetSchool.Lecture_4.Example.Matrix.data": "NetSchool.Lecture_4.Example.Matrix.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Fill(System.Int32)": "NetSchool.Lecture_4.Example.Matrix.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Print": "NetSchool.Lecture_4.Example.Matrix.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Vector": "NetSchool.Lecture_4.Example.Matrix.Vector.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Vector.toDown": "NetSchool.Lecture_4.Example.Matrix.Vector.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Vector.toLeft": "NetSchool.Lecture_4.Example.Matrix.Vector.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Vector.toRight": "NetSchool.Lecture_4.Example.Matrix.Vector.yml",
+  "NetSchool.Lecture_4.Example.Matrix.Vector.toUp": "NetSchool.Lecture_4.Example.Matrix.Vector.yml"
+}

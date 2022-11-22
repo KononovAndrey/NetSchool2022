@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: NetSchool.Lecture_4.Example
+  name: NetSchool.Lecture_4.Example
+  items:
+  - uid: NetSchool.Lecture_4.Example.Matrix
+    name: Matrix
+  - uid: NetSchool.Lecture_4.Example.Matrix.Vector
+    name: Matrix.Vector

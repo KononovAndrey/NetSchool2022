@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: NetSchool.Lecture_4.Example
+  commentId: N:NetSchool.Lecture_4.Example
+  id: NetSchool.Lecture_4.Example
+  children:
+  - NetSchool.Lecture_4.Example.Matrix
+  - NetSchool.Lecture_4.Example.Matrix.Vector
+  langs:
+  - csharp
+  - vb
+  name: NetSchool.Lecture_4.Example
+  nameWithType: NetSchool.Lecture_4.Example
+  fullName: NetSchool.Lecture_4.Example
+  type: Namespace
+  assemblies:
+  - NetSchool.Lecture_4.Example
+references:
+- uid: NetSchool.Lecture_4.Example.Matrix
+  commentId: T:NetSchool.Lecture_4.Example.Matrix
+  name: Matrix
+  nameWithType: Matrix
+  fullName: NetSchool.Lecture_4.Example.Matrix
+- uid: NetSchool.Lecture_4.Example.Matrix.Vector
+  commentId: T:NetSchool.Lecture_4.Example.Matrix.Vector
+  parent: NetSchool.Lecture_4.Example
+  name: Matrix.Vector
+  nameWithType: Matrix.Vector
+  fullName: NetSchool.Lecture_4.Example.Matrix.Vector
+- uid: NetSchool.Lecture_4.Example
+  commentId: N:NetSchool.Lecture_4.Example
+  name: NetSchool.Lecture_4.Example
+  nameWithType: NetSchool.Lecture_4.Example
+  fullName: NetSchool.Lecture_4.Example

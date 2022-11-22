@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NetSchool.Lecture_4.Example": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
