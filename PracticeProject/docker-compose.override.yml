@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  dsrnetschool_postgresql:
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Passw0rd
+    ports:
+      - "5432:5432"
+    networks:
+      - shared_dsrnetschool_net
+    volumes:      
+      - ~/.docker-conf/postgresql/data/:/var/lib/postgresql/data
+
+  dsrnetschool_redis:
+    ports:
+      - '6379:6379'
+    networks:
+      - shared_dsrnetschool_net
+    volumes:      
+      - ~/.docker-conf/redis/data/:/data
+
+  dsrnetschool_api:
+    ports:
+      - "10000:80"
+    networks:
+      - shared_dsrnetschool_net
+    env_file:
+      - env.api
+
+networks:
+  shared_dsrnetschool_net:
+    name: dsr_net_school
+    driver: bridge

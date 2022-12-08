@@ -1,0 +1,25 @@
+﻿@page
+@model DSRNetSchool.Api.Pages.IndexModel
+@{
+    ViewData["Title"] = "API";
+}
+
+<div class="stamp"></div>
+
+<div class="text-left m-3">
+    <h1>@(Model.HelloMessage ?? "DSR School API")</h1>
+    <div class="mt-3">
+        <a class="d-block mb-2" href="/health">Check health</a>
+
+        @if (Model.OpenApiEnabled)
+        {
+            <a class="d-block mb-2" href="/api/index.html">API description</a>
+        }
+
+@*        <a class="d-block mb-2" href="/.well-known/openid-configuration">OpenId configuration</a>
+*@
+    </div>
+    <div class="text-info position-absolute" style="right: 15px; bottom: 15px; color: navy !important;">
+        @Model.Version
+    </div>
+</div>

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+
+  dsrnetschool_postgresql:
+    image: postgres:14.1
+    
+  dsrnetschool_redis:
+    image: redis
+
+  dsrnetschool_api:
+    image: ${DOCKER_REGISTRY-}dsrnetschoolapi
+    build:
+      context: .
+      dockerfile: Systems/Api/DSRNetSchool.Api/Dockerfile
+    depends_on:
+      - dsr_cats_postgresql
+      - dsr_cats_redis

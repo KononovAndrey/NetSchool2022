@@ -15,11 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{E8014D66-F35
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{0A0E1633-FEFD-46A8-B06A-60D6C9D1511B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Api", "Systems\Api\DSRNetSchool.Api\DSRNetSchool.Api.csproj", "{A75DED6F-E075-4CC8-A77C-6BD31B16FAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Api", "Systems\Api\DSRNetSchool.Api\DSRNetSchool.Api.csproj", "{A75DED6F-E075-4CC8-A77C-6BD31B16FAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Api.Settings", "Systems\Api\DSRNetSchool.Api.Settings\DSRNetSchool.Api.Settings.csproj", "{A75F8362-BCF7-4B46-82EA-24E8FBC36B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Api.Settings", "Systems\Api\DSRNetSchool.Api.Settings\DSRNetSchool.Api.Settings.csproj", "{A75F8362-BCF7-4B46-82EA-24E8FBC36B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Common", "Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj", "{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Common", "Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj", "{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Settings", "Shared\DSRNetSchool.Settings\DSRNetSchool.Settings.csproj", "{C282542F-EE82-4B29-AA86-8480310DB1DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Services.Settings", "Services\DSRNetSchool.Services.Settings\DSRNetSchool.Services.Settings.csproj", "{57A07232-DB91-454D-9EEF-5B59601CCE9C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7745FF06-4AEA-4269-BFAA-724DEF8D33C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C282542F-EE82-4B29-AA86-8480310DB1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C282542F-EE82-4B29-AA86-8480310DB1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C282542F-EE82-4B29-AA86-8480310DB1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C282542F-EE82-4B29-AA86-8480310DB1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A07232-DB91-454D-9EEF-5B59601CCE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A07232-DB91-454D-9EEF-5B59601CCE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A07232-DB91-454D-9EEF-5B59601CCE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A07232-DB91-454D-9EEF-5B59601CCE9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7745FF06-4AEA-4269-BFAA-724DEF8D33C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7745FF06-4AEA-4269-BFAA-724DEF8D33C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7745FF06-4AEA-4269-BFAA-724DEF8D33C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7745FF06-4AEA-4269-BFAA-724DEF8D33C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +67,8 @@ Global
 		{A75DED6F-E075-4CC8-A77C-6BD31B16FAAF} = {E8014D66-F350-4AF5-A6F6-344605E2BFB6}
 		{A75F8362-BCF7-4B46-82EA-24E8FBC36B94} = {E8014D66-F350-4AF5-A6F6-344605E2BFB6}
 		{00FA5C0C-BED0-4EEF-AD22-7EDCE105EE7F} = {97493AD7-7AC8-470A-ACBF-31946FE115E8}
+		{C282542F-EE82-4B29-AA86-8480310DB1DF} = {97493AD7-7AC8-470A-ACBF-31946FE115E8}
+		{57A07232-DB91-454D-9EEF-5B59601CCE9C} = {122CE314-70B2-4C5A-A7CE-EC44BE005FDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A58512D-B2FC-4A6A-A07F-9B44674DC315}
