@@ -8,7 +8,7 @@ docker pull postgres
 
 docker run --name postgres --restart=always -p 25432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Passw0rd -e POSTGRES_DB=postgres -v postgresvolume:/var/lib/postgresql/data -d postgres
 
-**Start the PostgreSQL in the Docker**
+**Start the MSSQL in the Docker**
 
 docker pull mcr.microsoft.com/mssql/server:2022-latest
 
