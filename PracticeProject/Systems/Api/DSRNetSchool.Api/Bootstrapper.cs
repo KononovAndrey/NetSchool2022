@@ -1,6 +1,7 @@
 ﻿namespace DSRNetSchool.Api;
 
 using DSRNetSchool.Api.Settings;
+using DSRNetSchool.Services.Books;
 using DSRNetSchool.Services.Settings;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +13,7 @@ public static class Bootstrapper
             .AddMainSettings()
             .AddSwaggerSettings()
             .AddApiSpecialSettings()
+            .AddBookService()
             ;
 
         return services;

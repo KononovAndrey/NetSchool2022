@@ -14,5 +14,5 @@ services:
       context: .
       dockerfile: Systems/Api/DSRNetSchool.Api/Dockerfile
     depends_on:
-      - dsr_cats_postgresql
-      - dsr_cats_redis
+      - dsrnetschool_postgresql
+      - dsrnetschool_redis

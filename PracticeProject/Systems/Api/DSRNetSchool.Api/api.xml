@@ -84,5 +84,38 @@
             </summary>
             <response code="200">String items</response>
         </member>
+        <member name="T:DSRNetSchool.API.Controllers.BooksController">
+            <summary>
+            Books controller
+            </summary>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbidden</response>
+            <response code="404">Not Found</response>
+        </member>
+        <member name="M:DSRNetSchool.API.Controllers.BooksController.GetBooks(System.Int32,System.Int32)">
+            <summary>
+            Get books
+            </summary>
+            <param name="offset">Offset to the first element</param>
+            <param name="limit">Count elements on the page</param>
+            <response code="200">List of BookResponses</response>
+        </member>
+        <member name="M:DSRNetSchool.API.Controllers.BooksController.GetBookById(System.Int32)">
+            <summary>
+            Get books by Id
+            </summary>
+            <response code="200">BookResponse></response>
+        </member>
+        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Id">
+            <summary>
+            Book Id
+            </summary>
+        </member>
+        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Title">
+            <summary>
+            Book title
+            </summary>
+        </member>
     </members>
 </doc>

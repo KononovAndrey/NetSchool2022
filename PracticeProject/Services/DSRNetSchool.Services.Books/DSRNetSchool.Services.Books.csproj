@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\DSRNetSchool.Context.Entities\DSRNetSchool.Context.Entities.csproj" />
+    <ProjectReference Include="..\..\Data\DSRNetSchool.Context\DSRNetSchool.Context.csproj" />
+    <ProjectReference Include="..\..\Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj" />
+  </ItemGroup>
+
+</Project>
