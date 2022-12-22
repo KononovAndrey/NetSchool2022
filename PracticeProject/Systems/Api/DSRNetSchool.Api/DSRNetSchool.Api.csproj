@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.4.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
@@ -42,6 +43,7 @@
     <ProjectReference Include="..\..\..\Data\Migrations\DSRNetSchool.Context.MigrationsPostgreSQL\DSRNetSchool.Context.MigrationsPostgreSQL.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Books\DSRNetSchool.Services.Books.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Settings\DSRNetSchool.Services.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.UserAccount\DSRNetSchool.Services.UserAccount.csproj" />
     <ProjectReference Include="..\..\..\Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj" />
     <ProjectReference Include="..\..\..\Shared\DSRNetSchool.Settings\DSRNetSchool.Settings.csproj" />
     <ProjectReference Include="..\DSRNetSchool.Api.Settings\DSRNetSchool.Api.Settings.csproj" />

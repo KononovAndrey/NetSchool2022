@@ -3,7 +3,9 @@
 using AutoMapper;
 using DSRNetSchool.API.Controllers.Models;
 using DSRNetSchool.Common.Responses;
+using DSRNetSchool.Common.Security;
 using DSRNetSchool.Services.Books;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -17,6 +19,7 @@ using Microsoft.AspNetCore.Mvc;
 [ProducesResponseType(typeof(ErrorResponse), 400)]
 [Produces("application/json")]
 [Route("api/v{version:apiVersion}/books")]
+[Authorize]
 [ApiController]
 [ApiVersion("1.0")]
 public class BooksController : ControllerBase
@@ -40,6 +43,7 @@ public class BooksController : ControllerBase
     /// <param name="limit">Count elements on the page</param>
     /// <response code="200">List of BookResponses</response>
     [ProducesResponseType(typeof(IEnumerable<BookResponse>), 200)]
+    [Authorize(Policy = AppScopes.BooksRead)]
     [HttpGet("")]
     public async Task<IEnumerable<BookResponse>> GetBooks([FromQuery] int offset = 0, [FromQuery] int limit = 10)
     {
@@ -54,6 +58,7 @@ public class BooksController : ControllerBase
     /// </summary>
     /// <response code="200">BookResponse></response>
     [ProducesResponseType(typeof(BookResponse), 200)]
+    [Authorize(Policy = AppScopes.BooksRead)]
     [HttpGet("{id}")]
     public async Task<BookResponse> GetBookById([FromRoute] int id)
     {
@@ -64,6 +69,7 @@ public class BooksController : ControllerBase
     }
 
     [HttpPost("")]
+    [Authorize(Policy = AppScopes.BooksWrite)]
     public async Task<BookResponse> AddBook([FromBody] AddBookRequest request)
     {
         var model = mapper.Map<AddBookModel>(request);
@@ -74,6 +80,7 @@ public class BooksController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Policy = AppScopes.BooksWrite)]
     public async Task<IActionResult> UpdateBook([FromRoute] int id, [FromBody] UpdateBookRequest request)
     {
         var model = mapper.Map<UpdateBookModel>(request);
@@ -83,6 +90,7 @@ public class BooksController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Policy = AppScopes.BooksWrite)]
     public async Task<IActionResult> DeleteBook([FromRoute] int id)
     {
         await bookService.DeleteBook(id);

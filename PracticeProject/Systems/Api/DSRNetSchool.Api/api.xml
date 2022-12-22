@@ -47,7 +47,7 @@
             Swagger configuration
             </summary>
         </member>
-        <member name="M:DSRNetSchool.Api.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,DSRNetSchool.Services.Settings.MainSettings,DSRNetSchool.Services.Settings.SwaggerSettings)">
+        <member name="M:DSRNetSchool.Api.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,DSRNetSchool.Services.Settings.IdentitySettings,DSRNetSchool.Services.Settings.SwaggerSettings)">
             <summary>
             Add OpenAPI for API
             </summary>
@@ -84,6 +84,16 @@
             </summary>
             <response code="200">String items</response>
         </member>
+        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Id">
+            <summary>
+            Book Id
+            </summary>
+        </member>
+        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Title">
+            <summary>
+            Book title
+            </summary>
+        </member>
         <member name="T:DSRNetSchool.API.Controllers.BooksController">
             <summary>
             Books controller
@@ -106,16 +116,6 @@
             Get books by Id
             </summary>
             <response code="200">BookResponse></response>
-        </member>
-        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Id">
-            <summary>
-            Book Id
-            </summary>
-        </member>
-        <member name="P:DSRNetSchool.API.Controllers.Models.BookResponse.Title">
-            <summary>
-            Book title
-            </summary>
         </member>
     </members>
 </doc>

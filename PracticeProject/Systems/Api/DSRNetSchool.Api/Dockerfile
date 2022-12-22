@@ -15,6 +15,7 @@ COPY ["Data/Migrations/DSRNetSchool.Context.MigrationsPostgreSQL/DSRNetSchool.Co
 COPY ["Services/DSRNetSchool.Services.Books/DSRNetSchool.Services.Books.csproj", "Services/DSRNetSchool.Services.Books/"]
 COPY ["Shared/DSRNetSchool.Common/DSRNetSchool.Common.csproj", "Shared/DSRNetSchool.Common/"]
 COPY ["Services/DSRNetSchool.Services.Settings/DSRNetSchool.Services.Settings.csproj", "Services/DSRNetSchool.Services.Settings/"]
+COPY ["Services/DSRNetSchool.Services.UserAccount/DSRNetSchool.Services.UserAccount.csproj", "Services/DSRNetSchool.Services.UserAccount/"]
 COPY ["Systems/Api/DSRNetSchool.Api.Settings/DSRNetSchool.Api.Settings.csproj", "Systems/Api/DSRNetSchool.Api.Settings/"]
 RUN dotnet restore "Systems/Api/DSRNetSchool.Api/DSRNetSchool.Api.csproj"
 COPY . .

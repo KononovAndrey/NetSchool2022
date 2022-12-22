@@ -37,7 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Context.Migrat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Context.MigrationsPostgreSQL", "Data\Migrations\DSRNetSchool.Context.MigrationsPostgreSQL\DSRNetSchool.Context.MigrationsPostgreSQL.csproj", "{0505AF56-4C14-4C71-A706-1697C0942D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Services.Books", "Services\DSRNetSchool.Services.Books\DSRNetSchool.Services.Books.csproj", "{1E055763-8D5D-4AC1-A906-9016F20CF080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRNetSchool.Services.Books", "Services\DSRNetSchool.Services.Books\DSRNetSchool.Services.Books.csproj", "{1E055763-8D5D-4AC1-A906-9016F20CF080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Identity", "Systems\Identity\DSRNetSchool.Identity\DSRNetSchool.Identity.csproj", "{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRNetSchool.Services.UserAccount", "Services\DSRNetSchool.Services.UserAccount\DSRNetSchool.Services.UserAccount.csproj", "{C440D2DE-E838-4831-B808-221B08E282E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +93,14 @@ Global
 		{1E055763-8D5D-4AC1-A906-9016F20CF080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E055763-8D5D-4AC1-A906-9016F20CF080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E055763-8D5D-4AC1-A906-9016F20CF080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C440D2DE-E838-4831-B808-221B08E282E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C440D2DE-E838-4831-B808-221B08E282E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C440D2DE-E838-4831-B808-221B08E282E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C440D2DE-E838-4831-B808-221B08E282E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +119,8 @@ Global
 		{2F9918BE-1096-41F1-8774-C24BFC1DE2D6} = {9D74507B-0726-4D1F-B053-040182438E3F}
 		{0505AF56-4C14-4C71-A706-1697C0942D8D} = {9D74507B-0726-4D1F-B053-040182438E3F}
 		{1E055763-8D5D-4AC1-A906-9016F20CF080} = {122CE314-70B2-4C5A-A7CE-EC44BE005FDA}
+		{82ADAF0B-AF8F-4289-BBCF-177C8D99BCFD} = {0A0E1633-FEFD-46A8-B06A-60D6C9D1511B}
+		{C440D2DE-E838-4831-B808-221B08E282E9} = {122CE314-70B2-4C5A-A7CE-EC44BE005FDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A58512D-B2FC-4A6A-A07F-9B44674DC315}

@@ -28,6 +28,14 @@ services:
       - shared_dsrnetschool_net
     env_file:
       - env.api
+      
+  dsrnetschool_identity:
+    ports:
+      - "10001:80"
+    networks:
+      - shared_dsrnetschool_net
+    env_file:
+      - env.identity
 
 networks:
   shared_dsrnetschool_net:
