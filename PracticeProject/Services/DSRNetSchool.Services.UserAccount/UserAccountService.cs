@@ -11,18 +11,18 @@ public class UserAccountService : IUserAccountService
 {
     private readonly IMapper mapper;
     private readonly UserManager<User> userManager;
-    //private readonly IModelValidator<RegisterUserAccountModel> registerUserAccountModelValidator;
+    private readonly IModelValidator<RegisterUserAccountModel> registerUserAccountModelValidator;
 
-    public UserAccountService(IMapper mapper, UserManager<User> userManager)//, IModelValidator<RegisterUserAccountModel> registerUserAccountModelValidator)
+    public UserAccountService(IMapper mapper, UserManager<User> userManager, IModelValidator<RegisterUserAccountModel> registerUserAccountModelValidator)
     {
         this.mapper = mapper;
         this.userManager = userManager;
-       // this.registerUserAccountModelValidator = registerUserAccountModelValidator;
+        this.registerUserAccountModelValidator = registerUserAccountModelValidator;
     }
 
     public async Task<UserAccountModel> Create(RegisterUserAccountModel model)
     {
-        //registerUserAccountModelValidator.Check(model);
+        registerUserAccountModelValidator.Check(model);
 
         // Find user by email
         var user = await userManager.FindByEmailAsync(model.Email);
