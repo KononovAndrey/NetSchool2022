@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\DSRNetSchool.Context.Entities\DSRNetSchool.Context.Entities.csproj" />
     <ProjectReference Include="..\..\Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj" />
+    <ProjectReference Include="..\DSRNetSchool.Services.Actions\DSRNetSchool.Services.Actions.csproj" />
   </ItemGroup>
 
 </Project>

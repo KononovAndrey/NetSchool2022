@@ -8,6 +8,9 @@ services:
   dsrnetschool_redis:
     image: redis
 
+  dsrnetschool_rabbitmq:
+    image: rabbitmq:management
+
   dsrnetschool_api:
     image: ${DOCKER_REGISTRY-}dsrnetschoolapi
     build:
@@ -25,4 +28,26 @@ services:
     depends_on:
       - dsrnetschool_postgresql
       - dsrnetschool_redis
+      - dsrnetschool_api
+
+  dsrnetschool_worker_1:
+    image: ${DOCKER_REGISTRY-}dsrnetschoolworker
+    build:
+      context: .
+      dockerfile: Systems/Workers/DSRNetSchool.Worker/Dockerfile
+    depends_on:
+      - dsrnetschool_postgresql
+      - dsrnetschool_redis
+      - dsrnetschool_rabbitmq
+      - dsrnetschool_api
+  
+  dsrnetschool_worker_2:
+    image: ${DOCKER_REGISTRY-}dsrnetschoolworker
+    build:
+      context: .
+      dockerfile: Systems/Workers/DSRNetSchool.Worker/Dockerfile
+    depends_on:
+      - dsrnetschool_postgresql
+      - dsrnetschool_redis
+      - dsrnetschool_rabbitmq
       - dsrnetschool_api

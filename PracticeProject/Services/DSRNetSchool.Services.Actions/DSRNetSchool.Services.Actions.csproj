@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\DSRNetSchool.Consts\DSRNetSchool.Consts.csproj" />
+    <ProjectReference Include="..\DSRNetSchool.Services.EmailSender\DSRNetSchool.Services.EmailSender.csproj" />
+    <ProjectReference Include="..\DSRNetSchool.Services.RabbitMq\DSRNetSchool.Services.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>

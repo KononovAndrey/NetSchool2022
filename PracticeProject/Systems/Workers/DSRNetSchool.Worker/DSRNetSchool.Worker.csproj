@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+	<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+	<PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+	<PackageReference Include="Serilog.Expressions" Version="3.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\DSRNetSchool.Context\DSRNetSchool.Context.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Actions\DSRNetSchool.Services.Actions.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.EmailSender\DSRNetSchool.Services.EmailSender.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.RabbitMq\DSRNetSchool.Services.RabbitMq.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRNetSchool.Consts\DSRNetSchool.Consts.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRNetSchool.Settings\DSRNetSchool.Settings.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -16,6 +16,7 @@
     <ProjectReference Include="..\..\Data\DSRNetSchool.Context.Entities\DSRNetSchool.Context.Entities.csproj" />
     <ProjectReference Include="..\..\Data\DSRNetSchool.Context\DSRNetSchool.Context.csproj" />
     <ProjectReference Include="..\..\Shared\DSRNetSchool.Common\DSRNetSchool.Common.csproj" />
+    <ProjectReference Include="..\DSRNetSchool.Services.Cache\DSRNetSchool.Services.Cache.csproj" />
   </ItemGroup>
 
 </Project>

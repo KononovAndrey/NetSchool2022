@@ -16,5 +16,6 @@
     <None Include=".dockerignore" />
     <None Include="env.identity" />
     <None Include="env.api" />
+    <None Include="env.worker" />
   </ItemGroup>
 </Project>
