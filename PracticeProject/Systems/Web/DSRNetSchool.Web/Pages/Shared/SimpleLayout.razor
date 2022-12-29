@@ -1,0 +1,31 @@
+﻿@inherits LayoutComponentBase
+
+@inject IConfigurationService configuration
+
+<MudThemeProvider @bind-IsDarkMode="@(_darkMode)" />
+
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudText Typo="Typo.h5" >DSRNetSchool</MudText>
+        <MudSpacer />
+        <MudIconButton Icon="@(_darkMode ? Icons.Material.Filled.LightMode : Icons.Material.Filled.DarkMode)" @onclick="@DarkModeSwitch" Color="Color.Inherit" Edge="Edge.End" />
+    </MudAppBar>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    private bool _darkMode = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _darkMode = await configuration.GetDarkMode();
+    }
+
+    async void DarkModeSwitch()
+    {
+        _darkMode = !_darkMode;
+        await configuration.SetDarkMode(_darkMode);
+    }
+}

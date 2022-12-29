@@ -38,6 +38,8 @@ services.RegisterAppServices();
 
 var app = builder.Build();
 
+app.UseAppCors();
+
 app.UseAppHealthChecks();
 
 app.UseAppSwagger();

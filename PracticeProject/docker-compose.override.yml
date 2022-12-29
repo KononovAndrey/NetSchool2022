@@ -59,6 +59,12 @@ services:
     env_file:
       - env.worker
 
+  dsrnetschool_web:
+    ports:
+      - "10002:80"
+    networks:
+      - shared_dsrnetschool_net
+
 networks:
   shared_dsrnetschool_net:
     name: dsr_net_school

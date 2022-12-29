@@ -35,18 +35,18 @@ public class BookService : IBookService
 
     public async Task<IEnumerable<BookModel>> GetBooks(int offset = 0, int limit = 10)
     {
-        try
-        {
-            var cached_data = await cacheService.Get<IEnumerable<BookModel>>(contextCacheKey);
-            if (cached_data != null)
-                return cached_data;
-        }
-        catch
-        {
-            // Put log message here
-        }
+        //try
+        //{
+        //    var cached_data = await cacheService.Get<IEnumerable<BookModel>>(contextCacheKey);
+        //    if (cached_data != null)
+        //        return cached_data;
+        //}
+        //catch
+        //{
+        //    // Put log message here
+        //}
 
-        await Task.Delay(5000);
+        //await Task.Delay(5000);
 
 
 
@@ -88,6 +88,9 @@ public class BookService : IBookService
         var book = mapper.Map<Book>(model);
         await context.Books.AddAsync(book);
         context.SaveChanges();
+
+
+        //await cacheService.Delete(contextCacheKey);
 
         return mapper.Map<BookModel>(book);
     }

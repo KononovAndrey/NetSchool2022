@@ -42,6 +42,7 @@
     <ProjectReference Include="..\..\..\Data\Migrations\DSRNetSchool.Context.MigrationsMSSQL\DSRNetSchool.Context.MigrationsMSSQL.csproj" />
     <ProjectReference Include="..\..\..\Data\Migrations\DSRNetSchool.Context.MigrationsPostgreSQL\DSRNetSchool.Context.MigrationsPostgreSQL.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Actions\DSRNetSchool.Services.Actions.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Authors\DSRNetSchool.Services.Authors.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Books\DSRNetSchool.Services.Books.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.Cache\DSRNetSchool.Services.Cache.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRNetSchool.Services.RabbitMq\DSRNetSchool.Services.RabbitMq.csproj" />

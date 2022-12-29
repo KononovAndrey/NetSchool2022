@@ -1,0 +1,90 @@
+@inherits MudComponentBase
+
+@inject IBookService bookService
+
+<MudDialog>
+    <DialogContent>
+        <MudForm Model="model" @ref="form" Validation="@(modelValidator.ValidateValue)">
+            <MudGrid>
+                <MudItem xs="12" sm="6">
+                    <MudTextField Label="Title" @bind-Value="model.Title"
+                                  For="@(() => model.Title)"
+                                  Required="true"
+                                  RequiredError="Title is required!"
+                                  >
+                    </MudTextField>
+                </MudItem>
+                <MudItem xs="12" sm="6">
+                    <MudSelect @ref="selectAuthor" T="int" Label="Author" @bind-Value="model.AuthorId" For="@(() => model.AuthorId)">
+                        <MudSelectItem T="int" Value="0">&nbsp;</MudSelectItem>
+                        @foreach (var author in _authors)
+                        {
+                            <MudSelectItem T="int" Value="@author.Id">@author.Name</MudSelectItem>
+                        }
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12" >
+                    <MudTextField Label="Description"
+                                  Lines="5"
+                                  For="@(() => model.Description)"
+                                  @bind-Value="model.Description"></MudTextField>
+                </MudItem>
+            </MudGrid>
+        </MudForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="MudBlazor.Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    MudDialogInstance MudDialog { get; set; } = default!;
+
+    MudForm form = default!;
+    MudSelect<int> selectAuthor = default!;
+
+    BookModelValidator modelValidator = new BookModelValidator();
+
+    bool isNew = false;
+
+    [Parameter]
+    public int? BookId { get; set; } = default;
+
+    [Parameter]
+    public BookModel model { get; set; } = new() { AuthorId = 0 };
+
+    private List<AuthorModel> _authors { get; set; } = new List<AuthorModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var data = await bookService.GetAuthorList();
+        _authors.AddRange(data);
+
+        isNew = BookId == null;
+        if (!isNew)
+        {
+            var book = await bookService.GetBook(BookId ?? 0);
+
+            model.Id = book.Id;
+            model.AuthorId = book.AuthorId;
+            model.Title = book.Title;
+            model.Description = book.Description;
+        }
+
+        await selectAuthor.SelectOption(model.AuthorId);
+        form.ResetValidation();
+    }
+
+    async Task Submit()
+    {
+        await form.Validate();
+        if (form.IsValid)
+        {
+            MudDialog.Close(DialogResult.Ok(true));
+        }
+    }
+
+    void Cancel() => MudDialog.Cancel();
+}
